@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(background.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.protfolio{
+    width: 85%;
+    height: 85%;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+.header{
+    width: 100%;
+    height: 88px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3%;
+}
+.logo{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+.logo:hover{
+    scale: 0.8;
+}
+.links{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 38px;
+}
+.link{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.5s;
+    padding-right: 30px;
+}
+.link:hover{
+    color: #000;
+}
+.link:hover::after{
+    content: "";
+    width: 100%;
+    margin-top: 5px;
+    display: block;
+    border-bottom: 2px solid #000;
+}
+.content{
+    width: 100%;
+    height: calc(100% - 80%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 2%;
+}
+.content-left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 388px;
+}
+.heading{
+    color: #F9A826;
+    font-size: 50px;
+}
+.description{
+    font-size: 20px;
+    color: #aaa;
+    width: 90%;
+    text-align: justify;
+}
+.btn{
+    width: 200px;
+    padding: 20px 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 18px;
+    background-color: #F9A826;
+    border: 1px solid #F9A826;
+    color: #000;
+    border-radius: 50px;
+    transition: all 0.5s;
+}
+.btn:hover{
+    background-color: transparent;
+    border: 1px solid #F9A826;
+    color: #fff;
+}
+.content-right{
+    width: 50%;
+    height: 100%;
+}
+.content-right img{
+    /* width: 100%;
+    height: 100%; */
+    animation: move 2s alternate infinite ease-in-out;
+}
+@keyframes move{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(8%);
+    }
+}
